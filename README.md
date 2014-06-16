@@ -1,4 +1,4 @@
-# TRVSURLSessionOperation
+# TRVSURLSessionOperation: NSURLSession and NSOperationQueue working together
 
 By [@travisjeffery](http://twitter.com/travisjeffery).
 
