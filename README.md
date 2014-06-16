@@ -1,6 +1,8 @@
-# TRVSURLSessionOperation: NSURLSession and NSOperationQueue working together
+# TRVSURLSessionOperation
 
 By [@travisjeffery](http://twitter.com/travisjeffery).
+
+## NSURLSession and NSOperationQueue working together
 
 `TRVSURLSessionOperation` is an `NSOperation` subclass that wraps `NSURLSessionTask` so you can use them in a `NSOperationQueue`.
 
