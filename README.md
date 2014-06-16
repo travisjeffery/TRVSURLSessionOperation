@@ -83,3 +83,13 @@ NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConf
 
 NSLog(@"All requests are done!");
 ```
+
+## Install
+
+Use Cocoapods, and put the following in your Podfile:
+
+``` ruby
+pod `TRVSURLSessionOperation`, '~> 0.0.1'
+```
+
+Or manually drag the TRVSURLSessionOperation folder into your Xcode project.
