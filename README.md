@@ -19,7 +19,7 @@ NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConf
 [queue addOperation:[[TRVSURLSessionOperation alloc] initWithSession:session request:[NSURLRequest requestWithURL:@"https://twitter.com/travisjeffery"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) { ... }]];
 ```
 
-### Add a request depend on the completion on another request
+### Run a request on the completion of another, specific request
 
 For example, you have an initial request to log a user in or fetch their settings, and you want subsequent requests to wait for that initial request to finish and then they run.
 
@@ -76,7 +76,6 @@ NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConf
 [queue addOperation:[[TRVSURLSessionOperation alloc] initWithSession:session request:[NSURLRequest requestWithURL:@"https://twitter.com/travisjeffery"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) { ... }]];
 
 [queue addOperation:[[TRVSURLSessionOperation alloc] initWithSession:session request:[NSURLRequest requestWithURL:@"https://github.com/travisjeffery"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) { ... }]];
-
 
 [queue waitUntilAllOperationsAreFinished];
 
