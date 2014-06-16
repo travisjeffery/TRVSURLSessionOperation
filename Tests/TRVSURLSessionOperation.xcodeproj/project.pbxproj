@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32802BEA1906C73A00957F10 /* TRVSURLSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D8098C190079B100000071 /* TRVSURLSessionOperation.m */; };
 		32D809931900B52400000071 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D8097B1900780800000071 /* XCTest.framework */; };
 		32D809951900B52400000071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D809941900B52400000071 /* Foundation.framework */; };
 		32D809971900B52400000071 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D809961900B52400000071 /* UIKit.framework */; };
@@ -147,7 +148,7 @@
 		32D8096E190077F900000071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = 32D80971190077F900000071 /* Build configuration list for PBXProject "TRVSURLSessionOperation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -183,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D8099F1900B52400000071 /* Tests.m in Sources */,
+				32802BEA1906C73A00957F10 /* TRVSURLSessionOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +213,7 @@
 		32D80972190077F900000071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -327,6 +330,7 @@
 				32D809A31900B52400000071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
