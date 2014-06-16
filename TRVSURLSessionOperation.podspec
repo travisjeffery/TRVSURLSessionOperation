@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.homepage              = "https://github.com/travisjeffery/TRVSURLSessionOperation"
   s.license               = "MIT"
   s.author                = { "Travis Jeffery" => "tj@travisjeffery.com" }
+  s.social_media_url      = 'https://twitter.com/travisjeffery'
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
   s.source                = { :git => "https://github.com/travisjeffery/TRVSURLSessionOperation.git", :tag => "0.0.1" }
