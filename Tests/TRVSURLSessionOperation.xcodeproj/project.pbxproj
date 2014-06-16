@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322462F9194E9D1C008123A9 /* OS_X_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 322462F8194E9D1C008123A9 /* OS_X_Tests.m */; };
 		32802BEA1906C73A00957F10 /* TRVSURLSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D8098C190079B100000071 /* TRVSURLSessionOperation.m */; };
 		32D809931900B52400000071 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D8097B1900780800000071 /* XCTest.framework */; };
 		32D809951900B52400000071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D809941900B52400000071 /* Foundation.framework */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		322462F4194E9D1C008123A9 /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		322462F7194E9D1C008123A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322462F8194E9D1C008123A9 /* OS_X_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_X_Tests.m; sourceTree = "<group>"; };
 		32D8097B1900780800000071 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32D8097F1900780800000071 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		32D809811900780800000071 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -33,6 +37,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		322462F1194E9D1C008123A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32D8098F1900B52400000071 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,12 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322462F5194E9D1C008123A9 /* OS X Tests */ = {
+			isa = PBXGroup;
+			children = (
+				322462F8194E9D1C008123A9 /* OS_X_Tests.m */,
+				322462F6194E9D1C008123A9 /* Supporting Files */,
+			);
+			path = "OS X Tests";
+			sourceTree = "<group>";
+		};
+		322462F6194E9D1C008123A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				322462F7194E9D1C008123A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		32D8096D190077F900000071 = {
 			isa = PBXGroup;
 			children = (
 				32D8098A1900786B00000071 /* TRVSURLSessionOperation */,
 				32D8097D1900780800000071 /* Tests */,
 				32D809981900B52400000071 /* Tests */,
+				322462F5194E9D1C008123A9 /* OS X Tests */,
 				32D8097A1900780800000071 /* Frameworks */,
 				32D809791900780800000071 /* Products */,
 			);
@@ -61,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				32D809921900B52400000071 /* Tests.xctest */,
+				322462F4194E9D1C008123A9 /* OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +155,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		322462F3194E9D1C008123A9 /* OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322462FA194E9D1C008123A9 /* Build configuration list for PBXNativeTarget "OS X Tests" */;
+			buildPhases = (
+				322462F0194E9D1C008123A9 /* Sources */,
+				322462F1194E9D1C008123A9 /* Frameworks */,
+				322462F2194E9D1C008123A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OS X Tests";
+			productName = "OS X Tests";
+			productReference = 322462F4194E9D1C008123A9 /* OS X Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		32D809911900B52400000071 /* Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32D809A11900B52400000071 /* Build configuration list for PBXNativeTarget "Tests" */;
@@ -149,6 +196,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					322462F3194E9D1C008123A9 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 32D80971190077F900000071 /* Build configuration list for PBXProject "TRVSURLSessionOperation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,11 +215,19 @@
 			projectRoot = "";
 			targets = (
 				32D809911900B52400000071 /* Tests */,
+				322462F3194E9D1C008123A9 /* OS X Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		322462F2194E9D1C008123A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32D809901900B52400000071 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +239,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		322462F0194E9D1C008123A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322462F9194E9D1C008123A9 /* OS_X_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32D8098E1900B52400000071 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +278,93 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		322462FB194E9D1C008123A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "OS X Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		322462FC194E9D1C008123A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "OS X Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		32D80972190077F900000071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +469,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		322462FA194E9D1C008123A9 /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322462FB194E9D1C008123A9 /* Debug */,
+				322462FC194E9D1C008123A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		32D80971190077F900000071 /* Build configuration list for PBXProject "TRVSURLSessionOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
