@@ -89,7 +89,7 @@ NSLog(@"All requests are done!");
 Use Cocoapods, and put the following in your Podfile:
 
 ``` ruby
-pod `TRVSURLSessionOperation`, '~> 0.0.1'
+pod 'TRVSURLSessionOperation', '~> 0.0.1'
 ```
 
 Or manually drag the TRVSURLSessionOperation folder into your Xcode project.
