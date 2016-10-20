@@ -86,7 +86,7 @@ NSLog(@"All requests are done!");
 
 ## Install
 
-Use Cocoapods, and put the following in your Podfile:
+Use CocoaPods, and put the following in your Podfile:
 
 ``` ruby
 pod 'TRVSURLSessionOperation', '~> 0.0.1'
